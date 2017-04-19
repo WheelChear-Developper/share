@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Soap_Api.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <Soap_ApiDelegate>
+{
+    //Soap_Api
+    Soap_Api* _base_SoapApi;
+}
 
 @end
 

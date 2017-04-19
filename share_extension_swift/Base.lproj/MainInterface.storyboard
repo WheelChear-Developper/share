@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yn5-pn-WHK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" customModule="share_extension_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--Inport View Controller-->
+        <scene sceneID="8p9-eZ-ZVW">
+            <objects>
+                <viewController id="Yn5-pn-WHK" customClass="inport_ViewController" customModule="share_extension_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Te-2a-aBs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZKj-X6-f6i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJT-IO-yFf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-l0-9Tg">
+                                <rect key="frame" x="46" y="238" width="283" height="190"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-mb-bAD">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="証明書インポート" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORt-LL-cRV">
+                                                <rect key="frame" x="81" y="14" width="120" height="15"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.57254901960000004" green="0.7843137255" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ORt-LL-cRV" firstAttribute="centerY" secondItem="TB2-mb-bAD" secondAttribute="centerY" multiplier="0.85" id="PrK-4Z-uLU"/>
+                                            <constraint firstAttribute="height" constant="50" id="nZO-SJ-tjH"/>
+                                            <constraint firstItem="ORt-LL-cRV" firstAttribute="centerX" secondItem="TB2-mb-bAD" secondAttribute="centerX" id="s84-PU-J4J"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcK-th-xE1">
+                                        <rect key="frame" x="0.0" y="40" width="283" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="インポートファイル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-jx-TZo">
+                                                <rect key="frame" x="20" y="20" width="243" height="15"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="読み込み中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3P-us-968">
+                                                <rect key="frame" x="104.5" y="55" width="75" height="15"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZj-nt-duu">
+                                                <rect key="frame" x="10" y="100" width="263" height="40"/>
+                                                <color key="backgroundColor" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="jMs-Wm-1ox"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                                <state key="normal" title="インポート">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btn_save:" destination="Yn5-pn-WHK" eventType="touchUpInside" id="a4Y-OG-OK7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="DjN-jx-TZo" firstAttribute="leading" secondItem="qcK-th-xE1" secondAttribute="leading" constant="20" id="2Zw-vC-i0L"/>
+                                            <constraint firstAttribute="trailing" secondItem="jZj-nt-duu" secondAttribute="trailing" constant="10" id="E4H-NM-G87"/>
+                                            <constraint firstItem="jZj-nt-duu" firstAttribute="leading" secondItem="qcK-th-xE1" secondAttribute="leading" constant="10" id="Q1R-DQ-d37"/>
+                                            <constraint firstAttribute="trailing" secondItem="DjN-jx-TZo" secondAttribute="trailing" constant="20" id="TaS-kV-vI1"/>
+                                            <constraint firstItem="y3P-us-968" firstAttribute="top" secondItem="DjN-jx-TZo" secondAttribute="bottom" constant="20" id="Ylw-Dh-Q7y"/>
+                                            <constraint firstItem="y3P-us-968" firstAttribute="centerX" secondItem="qcK-th-xE1" secondAttribute="centerX" id="clW-Kf-jz7"/>
+                                            <constraint firstItem="DjN-jx-TZo" firstAttribute="top" secondItem="qcK-th-xE1" secondAttribute="top" constant="20" id="r1h-YB-qc9"/>
+                                            <constraint firstAttribute="bottom" secondItem="jZj-nt-duu" secondAttribute="bottom" constant="10" id="t3H-DT-oHA"/>
+                                            <constraint firstItem="jZj-nt-duu" firstAttribute="top" secondItem="y3P-us-968" secondAttribute="bottom" constant="30" id="vfs-Bj-YLn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GK-c6-HaS">
+                                        <rect key="frame" x="0.0" y="40" width="283" height="10"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="7Yz-Gu-68v"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TB2-mb-bAD" firstAttribute="leading" secondItem="cG9-l0-9Tg" secondAttribute="leading" id="1tM-nQ-6Oh"/>
+                                    <constraint firstItem="qcK-th-xE1" firstAttribute="top" secondItem="cG9-l0-9Tg" secondAttribute="top" constant="40" id="2Xa-YO-10z"/>
+                                    <constraint firstItem="TB2-mb-bAD" firstAttribute="top" secondItem="cG9-l0-9Tg" secondAttribute="top" id="2lk-tM-MZq"/>
+                                    <constraint firstItem="qcK-th-xE1" firstAttribute="leading" secondItem="cG9-l0-9Tg" secondAttribute="leading" id="4Uw-Hl-wG1"/>
+                                    <constraint firstAttribute="trailing" secondItem="TB2-mb-bAD" secondAttribute="trailing" id="6bg-NJ-erA"/>
+                                    <constraint firstAttribute="trailing" secondItem="4GK-c6-HaS" secondAttribute="trailing" id="8Fi-OO-Nte"/>
+                                    <constraint firstAttribute="bottom" secondItem="qcK-th-xE1" secondAttribute="bottom" id="Myc-da-Q0e"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcK-th-xE1" secondAttribute="trailing" id="NMM-MZ-hBZ"/>
+                                    <constraint firstItem="4GK-c6-HaS" firstAttribute="leading" secondItem="cG9-l0-9Tg" secondAttribute="leading" id="l13-5O-RDG"/>
+                                    <constraint firstItem="4GK-c6-HaS" firstAttribute="top" secondItem="cG9-l0-9Tg" secondAttribute="top" constant="40" id="v3S-sc-mca"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cG9-l0-9Tg" firstAttribute="leading" secondItem="dJT-IO-yFf" secondAttribute="leadingMargin" constant="30" id="a2U-va-33c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cG9-l0-9Tg" secondAttribute="trailing" constant="30" id="iSc-Lb-n0O"/>
+                            <constraint firstItem="cG9-l0-9Tg" firstAttribute="centerX" secondItem="dJT-IO-yFf" secondAttribute="centerX" id="mbw-nk-VQc"/>
+                            <constraint firstItem="cG9-l0-9Tg" firstAttribute="centerY" secondItem="dJT-IO-yFf" secondAttribute="centerY" id="toT-yD-LLM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_inport" destination="jZj-nt-duu" id="YRT-Tx-t6d"/>
+                        <outlet property="lbl_fileName" destination="y3P-us-968" id="UBG-xp-xmm"/>
+                        <outlet property="view_areart" destination="cG9-l0-9Tg" id="MxJ-Kk-a1P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbm-lH-dml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="840"/>
+        </scene>
+    </scenes>
+</document>
