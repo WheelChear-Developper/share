@@ -15,13 +15,10 @@ class inport_ViewController: UIViewController {
     @IBOutlet weak var btn_inport: UIButton!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.dark))
-        visualEffectView.frame = self.view.bounds
-        self.view.backgroundColor = UIColor.clear
-        self.view.addSubview(visualEffectView)
-        self.view.sendSubview(toBack: visualEffectView)
+        self.view.backgroundColor = UIColor(red:0.0,green:0.0,blue:0.0,alpha:0.4)
 
         let inputItem: NSExtensionItem = self.extensionContext?.inputItems[0] as! NSExtensionItem
         let itemProvider = inputItem.attachments![0] as! NSItemProvider
